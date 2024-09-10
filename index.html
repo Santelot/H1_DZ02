@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook H1-DZ02</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { width: 95%; margin: auto; }
+        .dropdown { margin-bottom: 20px; }
+        .time-title { font-size: 1.2em; font-weight: bold; }
+        .activity { margin-bottom: 30px; }
+        .banner { background-color: #4CAF50; color: white; padding: 10px; cursor: pointer; }
+        .title { font-weight: bold; }
+        .subtitle { font-style: italic; }
+        .content { display: none; padding: 10px; border: 1px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ddd; vertical-align: top; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Playbook H1-DZ02</h1>
+        
+        <div class="dropdown">
+            <label for="class-time">Tiempo efectivo de Clase:</label>
+            <select id="class-time" onchange="updateContent()">
+                <option value="50">50 minutos</option>
+                <option value="45">45 minutos</option>
+                <option value="40">40 minutos</option>
+            </select>
+        </div>
+        
+        <h2 id="selected-time" class="time-title">Tiempo efectivo de clase: 50 minutos</h2>
+        
+        <div id="activity-0" class="activity">
+            <div class="banner" onclick="toggleContent('revision_mision')">
+                <div class="title">📚 Actividad 0: Revisión Misión (1 paso) ⏰ Tiempo: N/A</div>
+                <div class="subtitle">Revisar la misión del día.</div>
+            </div>
+            <div id="revision_mision" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (N/A):</strong> Revisar diapositiva 1 para poder preparar la misión.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> N/A</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="activity-1" class="activity">
+            <div class="banner" onclick="toggleContent('saludo_ritual')">
+                <div class="title">🎉 Actividad 1: Saludo y Ritual Gnius Club (4 pasos) ⏰ Tiempo: 2.5 minutos</div>
+                <div class="subtitle">Dar la bienvenida a los Genios y preparar el ambiente para el aprendizaje.</div>
+            </div>
+            <div id="saludo_ritual" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (0.5 minutos):</strong> Revisar Diapositiva 2 "App Maverick:Gnius Club".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Hola, Genios! Hoy nos adentraremos en un tema importante y muy actual: la inteligencia artificial aplicada a la seguridad y cómo se usa para la predicción de delitos. Prepárense para una discusión muy interesante.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (1 minuto):</strong> Revisar Diapositiva 3 "¿Cómo están hoy?".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Antes de empezar, me gustaría saber cómo se sienten hoy con respecto a este tema. Si creen que la IA puede ser útil para mejorar la seguridad y se sienten positivos, levanten la mano derecha. Si tienen dudas o preocupaciones, levanten la mano izquierda. Es interesante ver lo que piensan. ¡Vamos a explorar más!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (0.5 minutos):</strong> Revisar Diapositiva 4 "Gracias por Asistir".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Juntemos nuestras manos para agradecer esta oportunidad de aprender sobre un tema tan importante como la inteligencia artificial y su impacto en la seguridad. ¡Gracias por estar aquí y participar!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (0.5 minutos):</strong> Revisar Diapositiva 5 "Objetivos de la Misión".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Hoy nos enfocaremos en dos grandes objetivos: 1. Entender cómo se utiliza la IA para la predicción de delitos. 2. Discutir los riesgos y beneficios éticos que esto implica. Al final de la clase, tendrán una mejor idea sobre si confían en este tipo de tecnología para la seguridad pública.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="activity-2" class="activity">
+            <div class="banner" onclick="toggleContent('innovacion_dia')">
+                <div class="title">💡 Actividad 2: Innovación del Día (2 pasos) ⏰ Tiempo: 4 minutos</div>
+                <div class="subtitle">Introducir a los estudiantes a un concepto innovador relacionado con el tema.</div>
+            </div>
+            <div id="innovacion_dia" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (2 minutos):</strong> Revisar Diapositiva 6 "Innovación del día: historia de la IA"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Hoy vamos a hablar sobre una de las tecnologías más influyentes de nuestro tiempo: la inteligencia artificial. ¿Sabían que la IA fue formalmente introducida en 1956 por el científico John McCarthy en una conferencia en Dartmouth College? McCarthy es conocido como el padre de la IA, y desde entonces esta tecnología ha crecido y se ha desarrollado en formas que jamás imaginamos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (2 minutos):</strong> Revisar Diapositiva 7 "Video: Historia de la IA".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Ahora vamos a ver un video breve que nos explica cómo la IA ha evolucionado desde su invención hasta hoy, impactando áreas como la seguridad, la medicina y nuestra vida cotidiana.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="activity-3" class="activity">
+            <div class="banner" onclick="toggleContent('brain_gym')">
+                <div class="title">🧠 Actividad 3: Brain Gym (4 pasos) ⏰ Tiempo: 24.5 minutos</div>
+                <div class="subtitle">Introducir el Brain Gym y preparar a los estudiantes para aprender sobre la IA en la predicción de delitos.</div>
+            </div>
+            <div id="brain_gym" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (1.5 minutos):</strong> Revisar Diapositiva 8 "Brain Gym".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Genios, hoy vamos a ejercitar nuestras mentes para entender cómo la inteligencia artificial puede predecir crímenes antes de que ocurran. Es una tecnología poderosa, pero también plantea preguntas importantes. ¡Vamos a comenzar!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (1.5 minutos):</strong> Revisar Diapositiva 9 "Acceso a la plataforma".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Vamos a abrir entrara a la plataforma, ubiquen la lección número 2. Verifiquen antes de abrir. Ahora sí va realizar la Lección 2: Quest, Challenge y Misión. Para realizar esta actividad tendremos un tiempo de 20 minutos.</td>
+                    </tr>
+                    <tr id="brain-gym-step3">
+                        <td><strong>PASO 3 (20 minutos):</strong> Revisar Diapositiva 10 "Let's go" -TIMER de 20 minutos.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> N/A</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (1.5 minutos):</strong> Revisar Diapositiva 11 "Reflexión".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Hemos visto cómo la IA puede ser útil para predecir delitos, pero también puede ser injusta si no se utiliza correctamente. ¿Cómo podríamos asegurarnos de que su uso sea justo y equitativo?</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="activity-4" class="activity">
+            <div class="banner" onclick="toggleContent('state_change')">
+                <div class="title">🔄 Actividad 4: State Change (4 pasos) ⏰ Tiempo: 2.5 minutos</div>
+                <div class="subtitle">Relajar y desestresar a los estudiantes para prepararlos para el siguiente segmento de la clase.</div>
+            </div>
+            <div id="state_change" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (0.5 minutos):</strong> Revisar Diapositiva 12 "Brain Vitamin".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Genios, vamos a hacer una breve actividad para activar nuestras mentes antes de seguir. Esta actividad se llama 'Rompiendo Códigos'. Les mostraré una serie de símbolos en pantalla, y deberán descifrar qué mensaje ocultan. ¡Será rápido, pero ayudará a activar nuestras neuronas!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (1 minuto):</strong> Revisar disapositiva 13: "Descifra el Código".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Aquí está el código: cada símbolo representa una letra del alfabeto. Tienen 1 minuto para descifrarlo. Pueden trabajar solos o con el compañero más cercano. ¡Buena suerte!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (0.5 minutos):</strong> Revisar Diapositiva 14 "Resultado del Código Secreto".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> El código escondía el mensaje: 'Confía en tus habilidades'. Esto nos recuerda que la clave para superar cualquier desafío es confiar en lo que ya saben y en lo que pueden aprender.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (0.5 minutos):</strong> Revisar Diapositiva 15 "Celebración".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Con la mente más despierta y lista, pasemos al siguiente desafío de la clase. Recuerden que el enfoque y la creatividad son nuestras mejores herramientas para aprender y resolver problemas.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+<div id="activity-5" class="activity">
+            <div class="banner" onclick="toggleContent('team_gnius')">
+                <div class="title">👥 Actividad 5: Team Gnius (4 pasos) ⏰ Tiempo: 10.5 minutos</div>
+                <div class="subtitle">Formar equipos y prepararse para el desafío.</div>
+            </div>
+            <div id="team_gnius" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (3 minutos):</strong> Revisar diapositiva 16 "Team Gnius: Formación de equipos y dar instrucciones para dividirse"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Vamos a dividirnos en dos grandes equipos. Un grupo defenderá los beneficios del uso de la IA en la predicción de delitos, mientras que el otro discutirá las posibles preocupaciones éticas y abusos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (0.5 minutos):</strong> Revisar diapositiva 17: "Timer 30 segundos"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> N/A</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (5 minutos):</strong> Revisar diapositiva 18 "Instrucciones y asignar enfoque"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Cada equipo tendrá 5 minutos para analizar la noticia sobre el uso de IA en la predicción de delitos desde su perspectiva. Equipo 1, enfóquense en los beneficios. Equipo 2, investiguen las preocupaciones éticas. Utilicen sus Magic Tablets para tomar notas de los puntos clave.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (2 minutos):</strong> Revisar diapositiva 19 "Recoger material" y diapositiva 20 "Timer 2 min"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Ahora, dos integrantes de cada equipo pasarán a recoger sus Magic Tablets. Tienen 2 minutos para hacerlo, asegúrense de tener todo listo para continuar con su investigación.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="activity-6" class="activity">
+            <div class="banner" onclick="toggleContent('challenge')">
+                <div class="title">⚔️ Actividad 6: Challenge (4 pasos) ⏰ Tiempo: 21.5 minutos</div>
+                <div class="subtitle">Realizar el desafío principal de la clase.</div>
+            </div>
+            <div id="challenge" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (1 minuto):</strong> Revisar diapositiva 21 "Challenge"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Es momento del desafío! Ambos equipos ya tiene su material, ahora sí manos a la obra. Cada equipo debe analizar la noticia que proyectaré sobre el uso de IA en la predicción de delitos. En 10 minutos, tendrán que preparar 5 argumentos sólidos dependiendo si son equipo 1 o 2. Además, es importante que elijan a las personas que defenderán estos argumentos. Recuerden usar sus Magic Tablets para tomar notas y estructurar sus ideas.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (10 minutos):</strong> Revisar diapositiva 22 "TIMER 10 minutos".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> N/A</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (10 minutos):</strong> Revisar diapositiva 23: "Presentación y reflexión final"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Ahora que han debatido los pros y contras, trabajen juntos para crear medidas que podrían garantizar que la IA se utilice de manera ética en la predicción de delitos. Piensen en cómo asegurar la transparencia, responsabilidad y las mejores prácticas para su uso. Tienen 10 minutos para discutir y organizar estas ideas.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (0.5 minutos):</strong> Revisar Diapositiva 24: "Objetivos de la misión alcanzados"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> N/A</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="activity-7" class="activity">
+            <div class="banner" onclick="toggleContent('easter_egg')">
+                <div class="title">🥚 Actividad 7: Easter Egg (4 pasos) ⏰ Tiempo: 3.5 minutos</div>
+                <div class="subtitle">Realizar la actividad sorpresa del Easter Egg.</div>
+            </div>
+            <div id="easter_egg" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (1 minuto):</strong> Revisar la diapositiva 25 "Easter Egg"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Genios, llegó el momento del Easter Egg. La pregunta es: 'Es importante utilizar datos diversos para evitar sesgos en los algoritmos de IA'. Si creen que es verdadero, levanten la mano derecha. Si creen que es falso, levanten la mano izquierda.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (0.5 minutos):</strong> Revisar diapositiva 26 "Pregunta del Easter Egg"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> N/A</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (1 minuto):</strong> Revisar diapositiva 27 "Respuesta correcta".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> La respuesta correcta es... ¡Verdadero! Es esencial que los algoritmos de IA se entrenen con datos diversos para evitar sesgos y asegurar decisiones más justas. ¡Felicidades a los que acertaron!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (1 minuto):</strong> Revisar diapositiva 28: "You've got mon-e"</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> N/A</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="activity-8" class="activity">
+            <div class="banner" onclick="toggleContent('honor_dojo')">
+                <div class="title">🎖️ Actividad 8: Honor de Dojo (2 pasos) ⏰ Tiempo: 4 minutos</div>
+                <div class="subtitle">Cerrar la clase y reconocer los logros de los estudiantes.</div>
+            </div>
+            <div id="honor_dojo" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (2 minutos):</strong> Revisar diapositiva 29 "Reflexión final".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Genios, antes de terminar nuestra misión de hoy, quiero reconocer a todos por su increíble trabajo. A lo largo de esta clase, han demostrado su capacidad para entender conceptos complejos y proponer soluciones éticas para el uso de la IA. ¡Bien hecho! Ahora reflexionemos: ¿Qué hemos aprendido sobre el uso responsable de la inteligencia artificial?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (2 minutos):</strong> Revisar diapositiva 30 "Honor the Lab".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> Antes de irnos, asegurémonos de dejar nuestro espacio de trabajo en perfecto orden. Por favor, limpien sus Magic Tablets y asegúrense de que todo esté en su lugar. Recuerden que la organización es clave para un ambiente de trabajo productivo.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+
+        function updateContent() {
+            var time = document.getElementById("class-time").value;
+            document.getElementById("selected-time").innerText = "Tiempo efectivo de clase: " + time + " minutos";
+
+            var activity3 = document.getElementById("activity-3");
+            var activity4 = document.getElementById("activity-4");
+            var brainGymStep3 = document.getElementById("brain-gym-step3");
+
+            if (time === "45" || time === "40") {
+                activity3.querySelector(".title").innerHTML = "🧠 Actividad 3: Brain Gym (4 pasos) ⏰ Tiempo: 19.5 minutos";
+                brainGymStep3.querySelector("strong").innerText = "PASO 3 (15 minutos):";
+                brainGymStep3.querySelector("td:last-child").innerHTML = "<strong>DIÁLOGO SUGERIDO:</strong> Vamos a realizar la Lección 2: Quest, Challenge y Misión. Para realizar esta actividad tendremos un tiempo de 15 minutos.";
+            } else {
+                activity3.querySelector(".title").innerHTML = "🧠 Actividad 3: Brain Gym (4 pasos) ⏰ Tiempo: 24.5 minutos";
+                brainGymStep3.querySelector("strong").innerText = "PASO 3 (20 minutos):";
+                brainGymStep3.querySelector("td:last-child").innerHTML = "<strong>DIÁLOGO SUGERIDO:</strong> Vamos a realizar la Lección 2: Quest, Challenge y Misión. Para realizar esta actividad tendremos un tiempo de 20 minutos.";
+            }
+
+            if (time === "40") {
+                activity4.style.display = "none";
+            } else {
+                activity4.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
